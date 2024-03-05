@@ -31,6 +31,11 @@ composer update finazon/finazon-grpc-php
 ### 1. Set up a new project
 ```shell
 mkdir hello-finazon && cd hello-finazon
+```
+```shell
+composer init --name="example/hello-finazon" --no-interaction 
+```
+```shell
 composer require finazon/finazon-grpc-php
 ```
 
