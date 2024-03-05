@@ -63,4 +63,4 @@ build:
 
 .PHONY: publish
 publish:
-	make build
+	@echo "Publish new version ..."

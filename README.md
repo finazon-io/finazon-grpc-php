@@ -74,10 +74,10 @@ try {
 }
 ```
 
-### 4. Input your API key
+### 3. Input your API key
 Replace `'your_api_key'` with your actual key.
 
-### 5. Run script
+### 4. Run script
 ```bash
 php time_series.php
 ```
