@@ -1,6 +1,6 @@
 PATH_THIS:=$(realpath $(dir $(lastword ${MAKEFILE_LIST})))
 PATH_DIST:=${PATH_THIS}/src
-PATH_PROTO:=proto/finazon
+PATH_PROTO:=proto
 
 PHP=/usr/bin/php
 PYTHON=/usr/bin/python3
