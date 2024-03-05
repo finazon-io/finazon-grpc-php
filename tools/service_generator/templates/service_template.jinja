@@ -1,0 +1,31 @@
+<?php
+namespace Finazon\Grpc\Service;
+
+use Finazon\Grpc\FinazonClient;
+use Finazon\Grpc\Exception\RequestException;
+use Finazon\Grpc\Api\{{ service.name }}ServiceClient;
+{% for method in service.methods %}
+use Finazon\Grpc\Api\{{ method.response }};
+use Finazon\Grpc\Api\{{ method.request }};
+{% endfor %}
+
+class {{ file.get_name_camel() }}Service
+{
+	
+	protected FinazonClient $client;
+	
+	public function __construct(string $apiToken, ?string $apiUrl = null)
+	{
+		$this->client = new FinazonClient($apiToken, $apiUrl);
+	}
+	
+	{% for method in service.methods %}
+	/**
+	 * @throws RequestException
+	 */
+    public function {{ method.get_name_camel_ucfirst() }}({{ method.request }} $request) : {{ method.response }}
+    {
+    	return $this->client->makeRequest({{ service.name }}ServiceClient::class, '{{ method.name }}', $request);
+    }
+    {% endfor %}
+}

@@ -1,0 +1,38 @@
+{
+    "name": "finazon/finazon-grpc-php",
+    "type": "library",
+    "description": "Finazon gRPC client library for PHP",
+    "keywords": [
+        "finazon",
+        "api",
+        "financial data",
+        "finazon grpc"
+    ],
+    "homepage": "https://finazon.io/",
+    "support": {
+        "docs": "https://finazon.io/docs/api/latest",
+        "issues": "https://github.com/finazon-io/finazon-grpc-php/issues",
+        "pull-request": "https://github.com/finazon-io/finazon-grpc-php/pulls",
+        "source": "https://github.com/finazon-io/finazon-grpc-php"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Finazon",
+            "homepage": "https://github.com/finazon-io/finazon-grpc-php"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Finazon\\": "src/Finazon"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-grpc": "*",
+        "ext-protobuf": "*",
+        "grpc/grpc": "^1.57",
+        "google/protobuf": "^3.25",
+        "google/common-protos": "^4.5"
+    }
+}
