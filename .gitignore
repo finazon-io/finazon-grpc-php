@@ -1,4 +1,4 @@
 .idea
 vendor
 composer.lock
-tools/service_generator/.venv
+__pycache__
