@@ -78,7 +78,7 @@ class FinazonClient
         if (!file_exists($versionFile) or !is_readable($versionFile)) {
             throw new \Exception("Version file $versionFile is not exists or not readable");
         }
-        $version = file_get_contents($versionFile);
+        $version = trim(file_get_contents($versionFile));
         list($major, $minor, $other) = explode('.', $version, 3);
         return implode('-', [$major, $minor]);
     }

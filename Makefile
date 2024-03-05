@@ -18,7 +18,7 @@ GENERATOR_CMD := ${GENERATOR_PATH}/main.py ${GENERATOR_TEMPLATES_PATH} ${GENERAT
 .PHONY: install
 install:
 	@echo "Install requirements ..."
-	@sudo apt install -y protobuf-compiler
+	#@sudo apt install -y protobuf-compiler
 	@${COMPOSER} install
 
 .PHONY: patch_proto
@@ -55,7 +55,7 @@ generate:
 
 .PHONY: bump_version
 bump_version:
-	@echo $VERION > VERSION
+	@echo ${VERSION} > VERSION
 
 .PHONY: build
 build:
