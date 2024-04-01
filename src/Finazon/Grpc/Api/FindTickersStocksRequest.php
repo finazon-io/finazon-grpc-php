@@ -65,6 +65,10 @@ class FindTickersStocksRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string lei = 17;</code>
      */
     protected $lei = '';
+    /**
+     * Generated from protobuf field <code>string dataset = 18;</code>
+     */
+    protected $dataset = '';
 
     /**
      * Constructor.
@@ -85,6 +89,7 @@ class FindTickersStocksRequest extends \Google\Protobuf\Internal\Message
      *     @type string $composite_figi
      *     @type string $share_figi
      *     @type string $lei
+     *     @type string $dataset
      * }
      */
     public function __construct($data = NULL) {
@@ -374,6 +379,28 @@ class FindTickersStocksRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->lei = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string dataset = 18;</code>
+     * @return string
+     */
+    public function getDataset()
+    {
+        return $this->dataset;
+    }
+
+    /**
+     * Generated from protobuf field <code>string dataset = 18;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDataset($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->dataset = $var;
 
         return $this;
     }

@@ -85,6 +85,10 @@ class GetTradesRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string lei = 18;</code>
      */
     protected $lei = '';
+    /**
+     * Generated from protobuf field <code>string dataset = 19;</code>
+     */
+    protected $dataset = '';
 
     /**
      * Constructor.
@@ -110,6 +114,7 @@ class GetTradesRequest extends \Google\Protobuf\Internal\Message
      *     @type string $composite_figi
      *     @type string $share_figi
      *     @type string $lei
+     *     @type string $dataset
      * }
      */
     public function __construct($data = NULL) {
@@ -509,6 +514,28 @@ class GetTradesRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->lei = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string dataset = 19;</code>
+     * @return string
+     */
+    public function getDataset()
+    {
+        return $this->dataset;
+    }
+
+    /**
+     * Generated from protobuf field <code>string dataset = 19;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDataset($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->dataset = $var;
 
         return $this;
     }
