@@ -38,10 +38,6 @@ class GetTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      */
     protected $instrument_type = '';
     /**
-     * Generated from protobuf field <code>string timezone = 7;</code>
-     */
-    protected $timezone = '';
-    /**
      * Generated from protobuf field <code>string interval = 8;</code>
      */
     protected $interval = '';
@@ -122,7 +118,6 @@ class GetTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *     @type string $mic
      *     @type string $country
      *     @type string $instrument_type
-     *     @type string $timezone
      *     @type string $interval
      *     @type int|string $start_at
      *     @type int|string $end_at
@@ -275,28 +270,6 @@ class GetTimeSeriesRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->instrument_type = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string timezone = 7;</code>
-     * @return string
-     */
-    public function getTimezone()
-    {
-        return $this->timezone;
-    }
-
-    /**
-     * Generated from protobuf field <code>string timezone = 7;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setTimezone($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->timezone = $var;
 
         return $this;
     }

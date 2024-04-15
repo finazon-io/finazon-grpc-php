@@ -23,7 +23,7 @@ class DatasetsServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetDatasetsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetDatasetsResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetDatasets(\Finazon\Grpc\Api\GetDatasetsRequest $argument,
       $metadata = [], $options = []) {

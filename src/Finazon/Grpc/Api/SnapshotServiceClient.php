@@ -23,7 +23,7 @@ class SnapshotServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetSnapshotRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetSnapshotResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetSnapshot(\Finazon\Grpc\Api\GetSnapshotRequest $argument,
       $metadata = [], $options = []) {

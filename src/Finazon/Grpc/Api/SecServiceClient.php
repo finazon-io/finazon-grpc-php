@@ -23,7 +23,7 @@ class SecServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetSecFillingsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetSecFillingsResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetFilings(\Finazon\Grpc\Api\GetSecFillingsRequest $argument,
       $metadata = [], $options = []) {

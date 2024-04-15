@@ -23,7 +23,7 @@ class TradeServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTradesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTradesResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTrades(\Finazon\Grpc\Api\GetTradesRequest $argument,
       $metadata = [], $options = []) {

@@ -23,7 +23,7 @@ class PublisherServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetPublishersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetPublishersResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetPublishers(\Finazon\Grpc\Api\GetPublishersRequest $argument,
       $metadata = [], $options = []) {

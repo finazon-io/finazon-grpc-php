@@ -23,7 +23,7 @@ class TickersServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\FindTickersStocksRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\FindTickerStocksResponse
+     * @return \Grpc\UnaryCall
      */
     public function FindTickersStocks(\Finazon\Grpc\Api\FindTickersStocksRequest $argument,
       $metadata = [], $options = []) {
@@ -38,7 +38,7 @@ class TickersServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\FindTickersCryptoRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\FindTickerCryptoResponse
+     * @return \Grpc\UnaryCall
      */
     public function FindTickersCrypto(\Finazon\Grpc\Api\FindTickersCryptoRequest $argument,
       $metadata = [], $options = []) {
@@ -53,7 +53,7 @@ class TickersServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\FindTickersForexRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\FindTickerForexResponse
+     * @return \Grpc\UnaryCall
      */
     public function FindTickersForex(\Finazon\Grpc\Api\FindTickersForexRequest $argument,
       $metadata = [], $options = []) {
@@ -68,7 +68,7 @@ class TickersServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\FindTickerUSRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\FindTickerUSResponse
+     * @return \Grpc\UnaryCall
      */
     public function FindTickerUS(\Finazon\Grpc\Api\FindTickerUSRequest $argument,
       $metadata = [], $options = []) {

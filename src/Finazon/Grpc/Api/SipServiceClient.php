@@ -23,7 +23,7 @@ class SipServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetSipTradesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetSipTradesResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTrades(\Finazon\Grpc\Api\GetSipTradesRequest $argument,
       $metadata = [], $options = []) {
@@ -38,7 +38,7 @@ class SipServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetSipMarketCenterRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetSipMarketCenterResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetMarketCenter(\Finazon\Grpc\Api\GetSipMarketCenterRequest $argument,
       $metadata = [], $options = []) {

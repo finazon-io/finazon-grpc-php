@@ -8,7 +8,7 @@ This is the official PHP library for Finazon, offering access to:
 🔑 **API key** is essential. If you haven't got one yet, [sign up here](https://finazon.io/).
 
 ## Requirements
-Ensure you have PHP 7.4 or later. 
+Ensure you have PHP 7.4 or later.
 
 ## Installation
 
@@ -33,7 +33,7 @@ composer update finazon/finazon-grpc-php
 mkdir hello-finazon && cd hello-finazon
 ```
 ```shell
-composer init --name="example/hello-finazon" --no-interaction 
+composer init --name="example/hello-finazon" --no-interaction
 ```
 ```shell
 composer require finazon/finazon-grpc-php
@@ -64,8 +64,8 @@ try {
     foreach ($response->getResult() as $t) {
         /** @var Timeseries $t */
         echo sprintf(
-            '%s - %s, %s, %s, %s, %s %s', 
-            $t->getTimestamp(), $t->getOpen(), $t->getHigh(), $t->getLow(), $t->getClose(), 
+            '%s - %s, %s, %s, %s, %s %s',
+            $t->getTimestamp(), $t->getOpen(), $t->getHigh(), $t->getLow(), $t->getClose(),
             $t->getVolume(), PHP_EOL,
         );
     }
@@ -84,59 +84,57 @@ php time_series.php
 📝 Expected output:
 ```
 Last AAPL OHLCV data
-1709582400 - 175.325, 175.5, 174.95, 175.1, 14962271 
-1709578800 - 174.2, 175.645, 173.98, 175.325, 8209663 
-1709575200 - 174.05, 174.505, 173.79, 174.205, 7869144 
-1709571600 - 174.1112, 174.7, 174.01, 174.05, 7365810 
-1709568000 - 174.835, 175.895, 174.1, 174.1201, 8672800 
-1709564400 - 174.96, 175.929, 173.9, 174.83, 14265584 
-1709560800 - 176.15, 176.9, 174.62, 174.97, 13824038 
-1709323200 - 179.9312, 179.97, 179.415, 179.695, 7701993 
-1709319600 - 179.315, 180.22, 179.31, 180.005, 6668926 
-1709316000 - 178.515, 179.39, 178.33, 179.32, 6103415 
+1709582400 - 175.325, 175.5, 174.95, 175.1, 14962271
+1709578800 - 174.2, 175.645, 173.98, 175.325, 8209663
+1709575200 - 174.05, 174.505, 173.79, 174.205, 7869144
+1709571600 - 174.1112, 174.7, 174.01, 174.05, 7365810
+1709568000 - 174.835, 175.895, 174.1, 174.1201, 8672800
+1709564400 - 174.96, 175.929, 173.9, 174.83, 14265584
+1709560800 - 176.15, 176.9, 174.62, 174.97, 13824038
+1709323200 - 179.9312, 179.97, 179.415, 179.695, 7701993
+1709319600 - 179.315, 180.22, 179.31, 180.005, 6668926
+1709316000 - 178.515, 179.39, 178.33, 179.32, 6103415
 ```
 
 👀 Check the full example and other examples [here](https://github.com/finazon-io/finazon-grpc-php/tree/main/examples)
 
-
 ## RPC support
 
 The following table outlines the supported rpc calls:
-<!--rpc_table_boundary-->
-| Service              | rpc                       | Description                                        |
-|----------------------|---------------------------|----------------------------------------------------|
-| ApiUsageService      | getApiUsage               | Get a list of products with quota limit/usage      |
-| BenzingaService      | getDividentsCalendar      | Returns the dividends calendar from Benzinga       |
-| BenzingaService      | getEarningsCalendar       | Returns the earnings calendar from Benzinga        |
-| BenzingaService      | getNews                   | Returns the news articles from Benzinga            |
-| BenzingaService      | getIPO                    | Returns IPO data from Benzinga                     |
-| BinanceService       | getTimeSeries             | Get time series data without technical indicators  |
-| CryptoService        | getTimeSeries             | Get time series data for any given ticker          |
-| DatasetsService      | getDatasets               | Get a list of all datasets available at Finazon    |
-| ExchangeService      | getMarketsCrypto          | Returns a list of supported crypto markets         |
-| ExchangeService      | getMarketsStocks          | Returns a list of supported stock markets          |
-| ForexService         | getTimeSeries             | Get time series data for any given ticker          |
-| PublisherService     | getPublishers             | Get a list of all publishers available at Finazon  |
-| SecService           | getFilings                | Real-time and historical access to all forms, filings, and exhibits directly from the SEC's EDGAR system |
-| SipService           | getTrades                 | Returns detailed information on trades executed through the Securities Information Processor (SIP) |
-| SipService           | getMarketCenter           | Returns a list of market centers                   |
-| SnapshotService      | getSnapshot               | This endpoint returns a combination of different data points, such as daily performance, last quote, last trade, minute data, and previous day performance |
-| TickersService       | findTickersStocks         | This API call returns an array of stocks tickers available at Finazon Data API. This list is updated daily |
-| TickersService       | findTickersCrypto         | This API call returns an array of crypto tickers available at Finazon Data API. This list is updated daily |
-| TickersService       | findTickersForex          | This API call returns an array of forex tickers available at Finazon Data API. This list is updated daily |
-| TickersService       | findTickerUS              | This API call returns an array of US tickers available at Finazon Data API. This list is updated daily |
-| TimeSeriesService    | getTimeSeries             | Get time series data without technical indicators  |
-| TimeSeriesService    | getTimeSeriesAtr          | Get time series data for ATR technical indicator   |
-| TimeSeriesService    | getTimeSeriesBBands       | Get time series data for BBands technical indicator |
-| TimeSeriesService    | getTimeSeriesIchimoku     | Get time series data for Ichimoku technical indicator |
-| TimeSeriesService    | getTimeSeriesMa           | Get time series data for Ma technical indicator    |
-| TimeSeriesService    | getTimeSeriesMacd         | Get time series data for Macd technical indicator  |
-| TimeSeriesService    | getTimeSeriesObv          | Get time series data for Obv technical indicator   |
-| TimeSeriesService    | getTimeSeriesRsi          | Get time series data for Rsi technical indicator   |
-| TimeSeriesService    | getTimeSeriesSar          | Get time series data for Sar technical indicator   |
-| TimeSeriesService    | getTimeSeriesStoch        | Get time series data for Stoch technical indicator |
-| TradeService         | getTrades                 | Returns general information on executed trades     |
-<!--rpc_table_boundary-->
+|Service                |rpc                        |Description                                                                                                                                                      |
+|-----------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ApiUsageService       | getApiUsage               | Get a list of products with quota limit/usage                                                                                                                   |
+| BenzingaService       | getDividentsCalendar      | Returns the dividends calendar from Benzinga                                                                                                                    |
+| BenzingaService       | getEarningsCalendar       | Returns the earnings calendar from Benzinga                                                                                                                     |
+| BenzingaService       | getNews                   | Returns the news articles from Benzinga                                                                                                                         |
+| BenzingaService       | getIPO                    | Returns IPO data from Benzinga                                                                                                                                  |
+| BinanceService        | getTimeSeries             | Get time series data without technical indicators                                                                                                               |
+| CryptoService         | getTimeSeries             | Get time series data for any given ticker                                                                                                                       |
+| DatasetsService       | getDatasets               | Get a list of all datasets available at Finazon.                                                                                                                |
+| ExchangeService       | getMarketsCrypto          | Returns a list of supported crypto markets                                                                                                                      |
+| ExchangeService       | getMarketsStocks          | Returns a list of supported stock markets                                                                                                                       |
+| ForexService          | getTimeSeries             | Get time series data for any given ticker                                                                                                                       |
+| PublisherService      | getPublishers             | Get a list of all publishers available at Finazon.                                                                                                              |
+| SecService            | getFilings                | Real-time and historical access to all forms, filings, and exhibits directly from the SEC's EDGAR system.                                                       |
+| SipService            | getTrades                 | Returns detailed information on trades executed through the Securities Information Processor (SIP)                                                              |
+| SipService            | getMarketCenter           | Returns a list of market centers                                                                                                                                |
+| SnapshotService       | getSnapshot               | This endpoint returns a combination of different data points, such as daily performance, last quote, last trade, minute data, and previous day performance.     |
+| TickersService        | findTickersStocks         | This API call returns an array of stocks tickers available at Finazon Data API. This list is updated daily.                                                     |
+| TickersService        | findTickersCrypto         | This API call returns an array of crypto tickers available at Finazon Data API. This list is updated daily.                                                     |
+| TickersService        | findTickersForex          | This API call returns an array of forex tickers available at Finazon Data API. This list is updated daily.                                                      |
+| TickersService        | findTickerUS              | This API call returns an array of US tickers available at Finazon Data API. This list is updated daily.                                                         |
+| TimeSeriesService     | getTimeSeries             | Get time series data without technical indicators                                                                                                               |
+| TimeSeriesService     | getTimeSeriesAtr          | Get time series data for ATR technical indicator.                                                                                                               |
+| TimeSeriesService     | getTimeSeriesBBands       | Get time series data for BBands technical indicator.                                                                                                            |
+| TimeSeriesService     | getTimeSeriesIchimoku     | Get time series data for Ichimoku technical indicator.                                                                                                          |
+| TimeSeriesService     | getTimeSeriesMa           | Get time series data for Ma technical indicator.                                                                                                                |
+| TimeSeriesService     | getTimeSeriesMacd         | Get time series data for Macd technical indicator.                                                                                                              |
+| TimeSeriesService     | getTimeSeriesObv          | Get time series data for Obv technical indicator.                                                                                                               |
+| TimeSeriesService     | getTimeSeriesRsi          | Get time series data for Rsi technical indicator.                                                                                                               |
+| TimeSeriesService     | getTimeSeriesSar          | Get time series data for Sar technical indicator.                                                                                                               |
+| TimeSeriesService     | getTimeSeriesStoch        | Get time series data for Stoch technical indicator.                                                                                                             |
+| TradeService          | getTrades                 | Returns general information on executed trades                                                                                                                  |
+
 Here's how you can use `service` and `request` objects:
 
 ```php

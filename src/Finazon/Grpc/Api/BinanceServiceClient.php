@@ -23,7 +23,7 @@ class BinanceServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetBinanceTimeSeriesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetBinanceTimeSeriesResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeries(\Finazon\Grpc\Api\GetBinanceTimeSeriesRequest $argument,
       $metadata = [], $options = []) {

@@ -18,10 +18,6 @@ class GetBinanceTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      */
     protected $ticker = '';
     /**
-     * Generated from protobuf field <code>string timezone = 2;</code>
-     */
-    protected $timezone = '';
-    /**
      * Generated from protobuf field <code>string interval = 3;</code>
      */
     protected $interval = '';
@@ -53,7 +49,6 @@ class GetBinanceTimeSeriesRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $ticker
-     *     @type string $timezone
      *     @type string $interval
      *     @type int|string $start_at
      *     @type int|string $end_at
@@ -85,28 +80,6 @@ class GetBinanceTimeSeriesRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->ticker = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string timezone = 2;</code>
-     * @return string
-     */
-    public function getTimezone()
-    {
-        return $this->timezone;
-    }
-
-    /**
-     * Generated from protobuf field <code>string timezone = 2;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setTimezone($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->timezone = $var;
 
         return $this;
     }

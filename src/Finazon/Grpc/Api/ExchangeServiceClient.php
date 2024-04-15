@@ -23,7 +23,7 @@ class ExchangeServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetMarketsCryptoRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetMarketsCryptoResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetMarketsCrypto(\Finazon\Grpc\Api\GetMarketsCryptoRequest $argument,
       $metadata = [], $options = []) {
@@ -38,7 +38,7 @@ class ExchangeServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetMarketsStocksRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetMarketsStocksResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetMarketsStocks(\Finazon\Grpc\Api\GetMarketsStocksRequest $argument,
       $metadata = [], $options = []) {

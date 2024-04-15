@@ -23,7 +23,7 @@ class ForexServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetForexTimeSeriesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetForexTimeSeriesResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeries(\Finazon\Grpc\Api\GetForexTimeSeriesRequest $argument,
       $metadata = [], $options = []) {

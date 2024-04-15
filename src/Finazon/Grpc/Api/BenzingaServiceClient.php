@@ -23,7 +23,7 @@ class BenzingaServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetDividentsCalendarRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetDividentsCalendarResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetDividentsCalendar(\Finazon\Grpc\Api\GetDividentsCalendarRequest $argument,
       $metadata = [], $options = []) {
@@ -38,7 +38,7 @@ class BenzingaServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetEarningsCalendarRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetEarningsCalendarResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetEarningsCalendar(\Finazon\Grpc\Api\GetEarningsCalendarRequest $argument,
       $metadata = [], $options = []) {
@@ -53,7 +53,7 @@ class BenzingaServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetNewsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetNewsResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetNews(\Finazon\Grpc\Api\GetNewsRequest $argument,
       $metadata = [], $options = []) {
@@ -68,7 +68,7 @@ class BenzingaServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetIPORequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetIPOResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetIPO(\Finazon\Grpc\Api\GetIPORequest $argument,
       $metadata = [], $options = []) {

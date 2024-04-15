@@ -23,7 +23,7 @@ class ApiUsageServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetApiUsageRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetApiUsageResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetApiUsage(\Finazon\Grpc\Api\GetApiUsageRequest $argument,
       $metadata = [], $options = []) {

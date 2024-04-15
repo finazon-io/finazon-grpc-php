@@ -23,7 +23,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeries(\Finazon\Grpc\Api\GetTimeSeriesRequest $argument,
       $metadata = [], $options = []) {
@@ -38,7 +38,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesAtrRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesAtrResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesAtr(\Finazon\Grpc\Api\GetTimeSeriesAtrRequest $argument,
       $metadata = [], $options = []) {
@@ -53,7 +53,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesBBandsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesBBandsResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesBBands(\Finazon\Grpc\Api\GetTimeSeriesBBandsRequest $argument,
       $metadata = [], $options = []) {
@@ -68,7 +68,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesIchimokuRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesIchimokuResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesIchimoku(\Finazon\Grpc\Api\GetTimeSeriesIchimokuRequest $argument,
       $metadata = [], $options = []) {
@@ -83,7 +83,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesMaRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesMaResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesMa(\Finazon\Grpc\Api\GetTimeSeriesMaRequest $argument,
       $metadata = [], $options = []) {
@@ -98,7 +98,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesMacdRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesMacdResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesMacd(\Finazon\Grpc\Api\GetTimeSeriesMacdRequest $argument,
       $metadata = [], $options = []) {
@@ -113,7 +113,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesObvRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesObvResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesObv(\Finazon\Grpc\Api\GetTimeSeriesObvRequest $argument,
       $metadata = [], $options = []) {
@@ -128,7 +128,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesRsiRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesRsiResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesRsi(\Finazon\Grpc\Api\GetTimeSeriesRsiRequest $argument,
       $metadata = [], $options = []) {
@@ -143,7 +143,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesSarRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesSarResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesSar(\Finazon\Grpc\Api\GetTimeSeriesSarRequest $argument,
       $metadata = [], $options = []) {
@@ -158,7 +158,7 @@ class TimeSeriesServiceClient extends \Grpc\BaseStub {
      * @param \Finazon\Grpc\Api\GetTimeSeriesStochRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Finazon\Grpc\Api\GetTimeSeriesStochResponse
+     * @return \Grpc\UnaryCall
      */
     public function GetTimeSeriesStoch(\Finazon\Grpc\Api\GetTimeSeriesStochRequest $argument,
       $metadata = [], $options = []) {
