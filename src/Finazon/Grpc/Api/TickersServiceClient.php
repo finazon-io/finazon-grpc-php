@@ -29,7 +29,7 @@ class TickersServiceClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/finazon.TickersService/FindTickersStocks',
         $argument,
-        ['\Finazon\Grpc\Api\FindTickerStocksResponse', 'decode'],
+        ['\Finazon\Grpc\Api\FindTickersStocksResponse', 'decode'],
         $metadata, $options);
     }
 
@@ -44,7 +44,7 @@ class TickersServiceClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/finazon.TickersService/FindTickersCrypto',
         $argument,
-        ['\Finazon\Grpc\Api\FindTickerCryptoResponse', 'decode'],
+        ['\Finazon\Grpc\Api\FindTickersCryptoResponse', 'decode'],
         $metadata, $options);
     }
 
@@ -59,22 +59,22 @@ class TickersServiceClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/finazon.TickersService/FindTickersForex',
         $argument,
-        ['\Finazon\Grpc\Api\FindTickerForexResponse', 'decode'],
+        ['\Finazon\Grpc\Api\FindTickersForexResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
      * This API call returns an array of US tickers available at Finazon Data API. This list is updated daily.
-     * @param \Finazon\Grpc\Api\FindTickerUSRequest $argument input argument
+     * @param \Finazon\Grpc\Api\FindTickersUSRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function FindTickerUS(\Finazon\Grpc\Api\FindTickerUSRequest $argument,
+    public function FindTickersUS(\Finazon\Grpc\Api\FindTickersUSRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/finazon.TickersService/FindTickerUS',
+        return $this->_simpleRequest('/finazon.TickersService/FindTickersUS',
         $argument,
-        ['\Finazon\Grpc\Api\FindTickerUSResponse', 'decode'],
+        ['\Finazon\Grpc\Api\FindTickersUSResponse', 'decode'],
         $metadata, $options);
     }
 

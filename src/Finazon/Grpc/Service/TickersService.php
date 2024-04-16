@@ -5,17 +5,17 @@ use Finazon\Grpc\FinazonClient;
 use Finazon\Grpc\Exception\RequestException;
 use Finazon\Grpc\Api\TickersServiceClient;
 
-use Finazon\Grpc\Api\FindTickerStocksResponse;
+use Finazon\Grpc\Api\FindTickersStocksResponse;
 use Finazon\Grpc\Api\FindTickersStocksRequest;
 
-use Finazon\Grpc\Api\FindTickerCryptoResponse;
+use Finazon\Grpc\Api\FindTickersCryptoResponse;
 use Finazon\Grpc\Api\FindTickersCryptoRequest;
 
-use Finazon\Grpc\Api\FindTickerForexResponse;
+use Finazon\Grpc\Api\FindTickersForexResponse;
 use Finazon\Grpc\Api\FindTickersForexRequest;
 
-use Finazon\Grpc\Api\FindTickerUSResponse;
-use Finazon\Grpc\Api\FindTickerUSRequest;
+use Finazon\Grpc\Api\FindTickersUSResponse;
+use Finazon\Grpc\Api\FindTickersUSRequest;
 
 
 class TickersService
@@ -32,7 +32,7 @@ class TickersService
 	/**
 	 * @throws RequestException
 	 */
-    public function findTickersStocks(FindTickersStocksRequest $request) : FindTickerStocksResponse
+    public function findTickersStocks(FindTickersStocksRequest $request) : FindTickersStocksResponse
     {
     	return $this->client->makeRequest(TickersServiceClient::class, 'FindTickersStocks', $request);
     }
@@ -40,7 +40,7 @@ class TickersService
 	/**
 	 * @throws RequestException
 	 */
-    public function findTickersCrypto(FindTickersCryptoRequest $request) : FindTickerCryptoResponse
+    public function findTickersCrypto(FindTickersCryptoRequest $request) : FindTickersCryptoResponse
     {
     	return $this->client->makeRequest(TickersServiceClient::class, 'FindTickersCrypto', $request);
     }
@@ -48,7 +48,7 @@ class TickersService
 	/**
 	 * @throws RequestException
 	 */
-    public function findTickersForex(FindTickersForexRequest $request) : FindTickerForexResponse
+    public function findTickersForex(FindTickersForexRequest $request) : FindTickersForexResponse
     {
     	return $this->client->makeRequest(TickersServiceClient::class, 'FindTickersForex', $request);
     }
@@ -56,9 +56,9 @@ class TickersService
 	/**
 	 * @throws RequestException
 	 */
-    public function findTickerUS(FindTickerUSRequest $request) : FindTickerUSResponse
+    public function findTickersUS(FindTickersUSRequest $request) : FindTickersUSResponse
     {
-    	return $this->client->makeRequest(TickersServiceClient::class, 'FindTickerUS', $request);
+    	return $this->client->makeRequest(TickersServiceClient::class, 'FindTickersUS', $request);
     }
     
 }
