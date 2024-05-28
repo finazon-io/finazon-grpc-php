@@ -25,6 +25,22 @@ class ApiUsageItem extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.finazon.ApiCalls historicalApiCalls = 3;</code>
      */
     protected $historicalApiCalls = null;
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls referenceApiCalls = 4;</code>
+     */
+    protected $referenceApiCalls = null;
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls timeSeriesApiCalls = 5;</code>
+     */
+    protected $timeSeriesApiCalls = null;
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls snapshotsApiCalls = 6;</code>
+     */
+    protected $snapshotsApiCalls = null;
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls tradesApiCalls = 7;</code>
+     */
+    protected $tradesApiCalls = null;
 
     /**
      * Constructor.
@@ -35,6 +51,10 @@ class ApiUsageItem extends \Google\Protobuf\Internal\Message
      *     @type string $product
      *     @type \Finazon\Grpc\Api\ApiCalls $apiCalls
      *     @type \Finazon\Grpc\Api\ApiCalls $historicalApiCalls
+     *     @type \Finazon\Grpc\Api\ApiCalls $referenceApiCalls
+     *     @type \Finazon\Grpc\Api\ApiCalls $timeSeriesApiCalls
+     *     @type \Finazon\Grpc\Api\ApiCalls $snapshotsApiCalls
+     *     @type \Finazon\Grpc\Api\ApiCalls $tradesApiCalls
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +124,94 @@ class ApiUsageItem extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Finazon\Grpc\Api\ApiCalls::class);
         $this->historicalApiCalls = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls referenceApiCalls = 4;</code>
+     * @return \Finazon\Grpc\Api\ApiCalls
+     */
+    public function getReferenceApiCalls()
+    {
+        return $this->referenceApiCalls;
+    }
+
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls referenceApiCalls = 4;</code>
+     * @param \Finazon\Grpc\Api\ApiCalls $var
+     * @return $this
+     */
+    public function setReferenceApiCalls($var)
+    {
+        GPBUtil::checkMessage($var, \Finazon\Grpc\Api\ApiCalls::class);
+        $this->referenceApiCalls = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls timeSeriesApiCalls = 5;</code>
+     * @return \Finazon\Grpc\Api\ApiCalls
+     */
+    public function getTimeSeriesApiCalls()
+    {
+        return $this->timeSeriesApiCalls;
+    }
+
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls timeSeriesApiCalls = 5;</code>
+     * @param \Finazon\Grpc\Api\ApiCalls $var
+     * @return $this
+     */
+    public function setTimeSeriesApiCalls($var)
+    {
+        GPBUtil::checkMessage($var, \Finazon\Grpc\Api\ApiCalls::class);
+        $this->timeSeriesApiCalls = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls snapshotsApiCalls = 6;</code>
+     * @return \Finazon\Grpc\Api\ApiCalls
+     */
+    public function getSnapshotsApiCalls()
+    {
+        return $this->snapshotsApiCalls;
+    }
+
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls snapshotsApiCalls = 6;</code>
+     * @param \Finazon\Grpc\Api\ApiCalls $var
+     * @return $this
+     */
+    public function setSnapshotsApiCalls($var)
+    {
+        GPBUtil::checkMessage($var, \Finazon\Grpc\Api\ApiCalls::class);
+        $this->snapshotsApiCalls = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls tradesApiCalls = 7;</code>
+     * @return \Finazon\Grpc\Api\ApiCalls
+     */
+    public function getTradesApiCalls()
+    {
+        return $this->tradesApiCalls;
+    }
+
+    /**
+     * Generated from protobuf field <code>.finazon.ApiCalls tradesApiCalls = 7;</code>
+     * @param \Finazon\Grpc\Api\ApiCalls $var
+     * @return $this
+     */
+    public function setTradesApiCalls($var)
+    {
+        GPBUtil::checkMessage($var, \Finazon\Grpc\Api\ApiCalls::class);
+        $this->tradesApiCalls = $var;
 
         return $this;
     }
